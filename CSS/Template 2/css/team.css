@@ -1,0 +1,44 @@
+section#team {
+  padding: 144px 48px;
+  background-color: rgb(241, 241, 241);
+}
+section#team > h2 {
+  font-weight: 400;
+  text-align: center;
+}
+section#team > p {
+  text-align: center;
+}
+section#team > div.members {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 16px;
+}
+section#team > div.members > div.member {
+  background-color: white;
+  box-shadow: 4px 4px 4px gray;
+}
+section#team > div.members > div.member > img {
+  max-width: 100%;
+}
+section#team > div.members > div.member > h3 {
+  padding: 0px 16px;
+}
+section#team > div.members > div.member > p.position {
+  padding: 0px 16px;
+}
+section#team > div.members > div.member > p {
+  padding: 0px 16px;
+}
+section#team > div.members > div.member > a {
+  margin: 0px 16px 16px 16px;
+  background-color: #f1f1f1;
+  text-decoration: none;
+  color: black;
+  padding: 8px 16px;
+  text-align: center;
+  display: block;
+}
+section#team > div.members > div.member > a:hover {
+  background-color: #cccccc;
+}

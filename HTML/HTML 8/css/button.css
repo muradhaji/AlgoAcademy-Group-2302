@@ -1,0 +1,37 @@
+a.myButton {
+  display: inline-block;
+  text-decoration: none;
+  padding: 16px;
+  color: white;
+  border-radius: 8px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+}
+
+a.primaryButton {
+  background-color: blue;
+}
+
+a.primaryButton:hover {
+  background-color: rgb(0, 0, 181);
+}
+
+a.successButton {
+  background-color: green;
+}
+
+a.successButton:hover {
+  background-color: rgb(1, 88, 1);
+}
+
+a.dangerButton {
+  background-color: red;
+}
+
+a.dangerButton:hover {
+  background-color: rgb(162, 0, 0);
+}
+
+/* a.myButton:hover {
+  background-color: black;
+} */

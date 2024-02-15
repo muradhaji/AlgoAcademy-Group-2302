@@ -1,0 +1,46 @@
+header,
+footer {
+  background-color: gray;
+  color: white;
+}
+
+nav {
+  background-color: bisque;
+}
+
+article {
+  background-color: cadetblue;
+}
+
+header,
+nav,
+article,
+footer {
+  padding: 24px;
+}
+
+/* Layout */
+nav {
+  width: 30%;
+}
+
+article {
+  width: 70%;
+}
+
+nav, article {
+  box-sizing: border-box;
+  float: left;
+  height: 300px;
+}
+
+footer {
+  clear: both;
+}
+
+@media (max-width: 400px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}

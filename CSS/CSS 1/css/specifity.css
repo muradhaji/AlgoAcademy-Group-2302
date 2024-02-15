@@ -1,0 +1,35 @@
+/* h1 {
+  color: red;
+} */
+
+/* #myHeader {
+  color: green;
+} */
+
+/* .firstHeader {
+  color: blue;
+} */
+
+/* h1.hclass1 {
+  color: red;
+}
+
+.hclass1.hclass2 {
+  color: green;
+}
+
+#hid1 {
+  color: blue;
+} */
+
+.hclass1 {
+  color: red;
+}
+
+.hclass2 {
+  color: green;
+}
+
+* {
+  color: yellow;
+}

@@ -1,0 +1,30 @@
+/* div {
+  width: 50%;
+} */
+
+div {
+  /* display: block; */
+  /* display: inline; */
+  /* text-align: center; */
+}
+
+a {
+  /* display: inline; */
+  /* display: block; */
+  /* text-align: center; */
+}
+
+span {
+  /* display: block; */
+  /* background-color: yellowgreen; */
+}
+
+span {
+  /* display: inline-block; */
+  display: block;
+  width: 200px;
+  height: 50px;
+  padding: 30px;
+  margin: 30px;
+  background-color: yellow;
+}

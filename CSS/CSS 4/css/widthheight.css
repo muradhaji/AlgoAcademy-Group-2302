@@ -1,0 +1,46 @@
+div {
+  background-color: darkcyan;
+
+  /* width: 50%;
+  height: 50%; */
+
+  /* width: 500px; */
+  /* inline-size: 500px; */
+
+  /* height: 150px; */
+  /* block-size: 150px; */
+
+  /* writing-mode: vertical-rl; */
+
+  /* max-width: 700px;
+  min-width: 300px;
+
+  min-height: 140px;
+  max-height: 162px;
+
+  overflow: scroll; */
+  /* width: 700px; */
+  /* max-width: 100%; */
+
+  /* min-width: 200px; */
+  /* max-width: 400px; */
+  /* min-block-size: 200px;
+  max-block-size: 400px;
+  block-size: 80%; */
+}
+
+body {
+  /* height: 550px; */
+}
+
+p {
+  border: 2px solid green;
+  margin: auto;
+  width: 600px;
+}
+
+p.p1 {
+}
+p.p2 {
+  max-width: 100%;
+}

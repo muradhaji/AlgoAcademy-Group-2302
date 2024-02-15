@@ -1,0 +1,33 @@
+div.parent {
+  position: relative;
+}
+
+img {
+  width: 100%;
+}
+
+div.text {
+  /* margin: 0; */
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+
+  translate: -50% -50%;
+
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 48px;
+  font-size: 24px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(180, 61, 61);
+  font-weight: bold;
+  border-radius: 36px 0px;
+}
+
+.asd {
+  margin: 0;
+  width: 400px;
+  height: 200px;
+  background-color: black;
+  color: white;
+}

@@ -1,0 +1,62 @@
+header,
+footer {
+  background-color: gray;
+  color: white;
+  text-align: center;
+}
+
+nav {
+  background-color: bisque;
+}
+
+div {
+  background-color: brown;
+  padding: 24px;
+}
+
+article {
+  background-color: darkcyan;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+header,
+nav,
+article,
+footer {
+  padding: 24px;
+}
+
+/* Layout CSS */
+
+body {
+  display: grid;
+  grid-template-columns: 30% 40% 30%;
+  grid-template-areas:
+    'HE HE HE'
+    'NA AR RE'
+    'FO FO FO';
+}
+
+header {
+  grid-area: HE;
+}
+
+nav {
+  grid-area: NA;
+}
+
+article {
+  grid-area: AR;
+}
+
+footer {
+  grid-area: FO;
+}
+
+div {
+  grid-area: RE;
+}

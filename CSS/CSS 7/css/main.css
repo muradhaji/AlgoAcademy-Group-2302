@@ -1,0 +1,65 @@
+nav {
+  background-color: black;
+  display: flex;
+}
+nav > a,
+nav > div.dropdown > a {
+  text-decoration: none;
+  padding: 8px 16px;
+  color: white;
+  display: inline-block;
+}
+nav > a:hover,
+nav > div.dropdown > a:hover {
+  background-color: white;
+  color: black;
+}
+nav > div.dropdown {
+  position: relative;
+}
+nav > div.dropdown > div.list {
+  position: absolute;
+  box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.1);
+  display: none;
+  width: 100%;
+}
+nav > div.dropdown:hover > div.list {
+  display: block;
+}
+nav > div.dropdown > div.list > a,
+nav > div.dropdown > div.list > div.dropdownlvl2 > a {
+  text-decoration: none;
+  padding: 8px 16px;
+  color: black;
+  background-color: white;
+  display: block;
+}
+nav > div.dropdown > div.list > a:hover,
+nav > div.dropdown > div.list > div.dropdownlvl2 > a:hover {
+  background-color: #cccccc;
+}
+
+nav > div.dropdown > div.list > div.dropdownlvl2 {
+  position: relative;
+}
+nav > div.dropdown > div.list > div.dropdownlvl2 > div.listlvl2 {
+  position: absolute;
+  left: 100%;
+  top: 0;
+  width: 100%;
+  box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.1);
+  display: none;
+}
+nav > div.dropdown > div.list > div.dropdownlvl2:hover > div.listlvl2 {
+  display: block;
+}
+nav > div.dropdown > div.list > div.dropdownlvl2 > div.listlvl2 > a {
+  text-decoration: none;
+  background-color: white;
+  color: black;
+  padding: 8px 16px;
+  display: block;
+}
+nav > div.dropdown > div.list > div.dropdownlvl2 > div.listlvl2 > a:hover {
+  background-color: #cccccc;
+}

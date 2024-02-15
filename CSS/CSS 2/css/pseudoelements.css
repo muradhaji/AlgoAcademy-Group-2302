@@ -1,0 +1,30 @@
+/* span::first-line {
+  color: red;
+} */
+
+/* div::first-letter {
+  color: red;
+  font-size: 64px;
+} */
+
+/* h1.special::before {
+  content: 'Hello ';
+}
+
+h1.special::after {
+  content: ', how are you?';
+} */
+
+/* ul li {
+  color: red;
+}
+
+ul li::marker {
+  color: green;
+  font-size: 64px;
+} */
+
+p::selection {
+  background-color: black;
+  color: white;
+}

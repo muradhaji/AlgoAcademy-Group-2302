@@ -1,0 +1,15 @@
+/* p:first-child {
+  color: red;
+} */
+
+/* div:last-child {
+  color: red;
+} */
+
+input:hover {
+  background-color: gray;
+}
+
+input:focus {
+  background-color: yellow;
+}

@@ -1,0 +1,53 @@
+/* h1 {
+  color: red;
+} */
+
+/* .alman {
+  background-color: red;
+}
+
+.american {
+  background-color: green;
+}
+
+.eyrixett {
+  font-style: italic;
+} */
+
+.almanmasini {
+  background-color: red;
+}
+
+.almanMasini {
+  background-color: tomato;
+}
+
+.americanmasini {
+  background-color: green;
+}
+
+.americanMasini {
+  background-color: greenyellow;
+}
+
+/* .camelCaseCode {} */
+/* .snake_case_code {} */
+/* .PascalCaseCode {} */
+/* .kabab-case-code {} */
+
+/* .mainHeader {
+  background-color: blue;
+  color: white;
+  padding: 16px;
+} */
+
+h1.mainHeader,
+h2.mainHeader,
+h3.mainHeader,
+h4.mainHeader,
+h5.mainHeader,
+h6.mainHeader {
+  background-color: blue;
+  color: white;
+  padding: 16px;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Iframes</title>
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/menu.css">
+  <link rel="stylesheet" href="css/iframes.css">
+  <link rel="stylesheet" href="css/buttons.css">
+</head>
+
+<body>
+
+  <ul class="menu">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="buttons.html">Buttons</a></li>
+    <li><a href="images.html">Images</a></li>
+    <li><a href="tables.html">Tables</a></li>
+    <li><a href="lists.html">Lists</a></li>
+    <li><a href="iframes.html">Iframes</a></li>
+    <li><a href="forms.html">Forms</a></li>
+    <li><a href="layouts.html">Layouts</a></li>
+    <li><a href="menus.html">Menus</a></li>
+  </ul>
+
+  <h1>You can embed other web sites into your pages with Iframes!</h1>
+
+  <iframe src="" id="iframe1" name="targetIframe"></iframe>
+  <a href="buttons.html" class="button infoButton" target="targetIframe">Buttons</a>
+  <a href="tables.html" class="button infoButton" target="targetIframe">Tables</a>
+
+  <h2>Nested iframes and how link targets work!</h2>
+  <iframe src="iframes2.html"></iframe>
+
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+* {
+  /* box-sizing: border-box; */
+  color: #dafffb;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header,
+nav,
+article,
+footer {
+  padding: 24px;
+}
+
+header,
+footer {
+  background-color: #001c30;
+}
+
+section {
+  display: flex;
+}
+
+nav {
+  flex: 1;
+  background-color: #176b87;
+}
+
+nav ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+article {
+  flex: 3;
+  background-color: #64ccc5;
+  text-align: justify;
+}
+
+footer {
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  section {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,132 @@
+body {
+  margin: 0;
+}
+
+header {
+}
+aside {
+}
+main {
+  padding: 16px;
+}
+footer {
+}
+
+/* Horizontal Menu */
+
+nav.horMenu {
+  background-color: black;
+  display: flex;
+}
+nav.horMenu > a {
+  padding: 8px 16px;
+  color: white;
+  text-decoration: none;
+}
+nav.horMenu > a:hover {
+  background-color: white;
+  color: black;
+}
+
+/* Vertical Menu */
+
+aside {
+  background-color: #f5f5f5;
+}
+aside > h3 {
+  padding: 0px 16px;
+}
+nav.verMenu {
+  display: flex;
+  flex-direction: column;
+}
+nav.verMenu > a {
+  padding: 8px 16px;
+  text-decoration: none;
+  color: black;
+}
+nav.verMenu > a:hover {
+  background-color: black;
+  color: white;
+}
+
+/* Article */
+
+article {
+  display: flex;
+  gap: 32px;
+  margin-bottom: 32px;
+}
+article > div.content {
+  flex: 6;
+}
+article > div.content > h2 {
+  color: darkcyan;
+  font-size: 4vw;
+}
+article > div.content > p {
+}
+article > div.reklamlar {
+  flex: 4;
+}
+article > div.reklamlar > div.reklam {
+  border: 1px solid #cccccc;
+  text-align: center;
+}
+article > div.reklamlar > div.kicikReklam {
+  padding: 32px 0px;
+  margin-bottom: 16px;
+}
+article > div.reklamlar > div.boyukReklam {
+  padding: 64px 0px;
+}
+
+/* Pages Navigation */
+
+nav.pageMenu {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+}
+nav.pageMenu > a {
+  color: black;
+  text-decoration: none;
+  padding: 8px 12px;
+}
+nav.pageMenu > a:hover {
+  background-color: black;
+  color: white;
+}
+
+/* Footer */
+
+footer > p {
+  color: white;
+  margin: 0;
+}
+
+footer > p.top {
+  background-color: #666666;
+  padding: 16px;
+}
+footer > p.bottom {
+  background-color: #333333;
+  padding: 32px 16px;
+}
+footer > p.bottom > a {
+  color: white;
+}
+
+@media (max-width: 1000px) {
+  aside {
+    display: none;
+  }
+  body {
+  }
+}
+
+@media (max-width: 600px) {
+  article {
+    flex-direction: column;
+  }
+}

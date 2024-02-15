@@ -1,0 +1,43 @@
+table,
+th,
+td {
+  border: 1px solid black;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+/* thead {
+  background-color: lightgray;
+}
+
+tbody {
+  background-color: aquamarine;
+}
+
+tfoot {
+  background-color: yellow;
+} */
+
+/* odd - tek */
+/* even - cun */
+
+/* tr:hover {
+  background-color: aqua;
+}
+
+th:hover,
+td:hover {
+  background-color: gray;
+} */
+
+/* tr:nth-child(even):hover {
+  background-color: aqua;
+} */
+
+th:nth-child(even),
+td:nth-child(even) {
+  background-color: aqua;
+}

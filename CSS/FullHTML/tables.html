@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Tables</title>
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/menu.css">
+  <link rel="stylesheet" href="css/tables.css">
+</head>
+
+<body>
+
+  <ul class="menu">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="buttons.html">Buttons</a></li>
+    <li><a href="images.html">Images</a></li>
+    <li><a href="tables.html">Tables</a></li>
+    <li><a href="lists.html">Lists</a></li>
+    <li><a href="iframes.html">Iframes</a></li>
+    <li><a href="forms.html">Forms</a></li>
+    <li><a href="layouts.html">Layouts</a></li>
+    <li><a href="menus.html">Menus</a></li>
+  </ul>
+
+  <h1>Introduce your data with well designed Tables!</h1>
+
+  <h2>Vertical table!</h2>
+
+  <table id="table1">
+    <caption>Yearly salary table.</caption>
+    <colgroup>
+      <col style="width: 6%;">
+      <col style="width: 10%;">
+      <col style="width: 7%;" span="12">
+    </colgroup>
+    <thead>
+      <tr>
+        <th colspan="2">Table Name</th>
+        <th colspan="12">2023</th>
+      </tr>
+      <tr>
+        <th colspan="2">Seasons:</th>
+        <th colspan="2">Winter</th>
+        <th colspan="3">Spring</th>
+        <th colspan="3">Summer</th>
+        <th colspan="3">Autumn</th>
+        <th>Winter</th>
+      </tr>
+      <tr>
+        <td>№</td>
+        <td>Name</td>
+        <td>Jan</td>
+        <td>Feb</td>
+        <td>Mar</td>
+        <td>Apr</td>
+        <td>May</td>
+        <td>Jun</td>
+        <td>Jul</td>
+        <td>Aug</td>
+        <td>Sep</td>
+        <td>Oct</td>
+        <td>Nov</td>
+        <td>Dec</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>Person</td>
+        <td>100</td>
+        <td>100</td>
+        <td>100</td>
+        <td>100</td>
+        <td>100</td>
+        <td>100</td>
+        <td>100</td>
+        <td>100</td>
+        <td>100</td>
+        <td>100</td>
+        <td>100</td>
+        <td>100</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Person</td>
+        <td>100</td>
+        <td>100</td>
+        <td>100</td>
+        <td>100</td>
+        <td>100</td>
+        <td>100</td>
+        <td>100</td>
+        <td>100</td>
+        <td>100</td>
+        <td>100</td>
+        <td>100</td>
+        <td>100</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Person</td>
+        <td>100</td>
+        <td>100</td>
+        <td>100</td>
+        <td>100</td>
+        <td>100</td>
+        <td>100</td>
+        <td>100</td>
+        <td>100</td>
+        <td>100</td>
+        <td>100</td>
+        <td>100</td>
+        <td>100</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td colspan="2">Monthly summary:</td>
+        <td>300</td>
+        <td>300</td>
+        <td>300</td>
+        <td>300</td>
+        <td>300</td>
+        <td>300</td>
+        <td>300</td>
+        <td>300</td>
+        <td>300</td>
+        <td>300</td>
+        <td>300</td>
+        <td>300</td>
+      </tr>
+      <tr>
+        <td colspan="2">Seasonal summary:</td>
+        <td colspan="2">600</td>
+        <td colspan="3">900</td>
+        <td colspan="3">900</td>
+        <td colspan="3">900</td>
+        <td>300</td>
+      </tr>
+      <tr>
+        <td colspan="2">Yearly summary:</td>
+        <td colspan="12">3600</td>
+      </tr>
+    </tfoot>
+  </table>
+
+  <h2>Horizontal table!</h2>
+
+  <table id="table2">
+    <caption>Yearly salary table.</caption>
+    <colgroup>
+      <col span="3" class="head">
+      <col span="3" class="body">
+      <col span="3" class="foot">
+    </colgroup>
+    <tr>
+      <th colspan="3">Table name</th>
+      <td>Person</td>
+      <td>Person</td>
+      <td>Person</td>
+      <td>Monthly</td>
+      <td>Seasonal</td>
+      <td>Yearly</td>
+    </tr>
+    <tr>
+      <th rowspan="12">2023</th>
+      <th rowspan="2">Winter</th>
+      <th>Jan</th>
+      <td>100</td>
+      <td>100</td>
+      <td>100</td>
+      <td>300</td>
+      <td rowspan="2">600</td>
+      <td rowspan="12">3600</td>
+    </tr>
+    <tr>
+      <th>Feb</th>
+      <td>100</td>
+      <td>100</td>
+      <td>100</td>
+      <td>300</td>
+    </tr>
+    <tr>
+      <th rowspan="3">Spring</th>
+      <th>Mar</th>
+      <td>100</td>
+      <td>100</td>
+      <td>100</td>
+      <td>300</td>
+      <td rowspan="3">900</td>
+    </tr>
+    <tr>
+      <th>Apr</th>
+      <td>100</td>
+      <td>100</td>
+      <td>100</td>
+      <td>300</td>
+    </tr>
+    <tr>
+      <th>May</th>
+      <td>100</td>
+      <td>100</td>
+      <td>100</td>
+      <td>300</td>
+    </tr>
+    <tr>
+      <th rowspan="3">Summer</th>
+      <th>Jun</th>
+      <td>100</td>
+      <td>100</td>
+      <td>100</td>
+      <td>300</td>
+      <td rowspan="3">900</td>
+    </tr>
+    <tr>
+      <th>Jul</th>
+      <td>100</td>
+      <td>100</td>
+      <td>100</td>
+      <td>300</td>
+    </tr>
+    <tr>
+      <th>Aug</th>
+      <td>100</td>
+      <td>100</td>
+      <td>100</td>
+      <td>300</td>
+    </tr>
+    <tr>
+      <th rowspan="3">Autumn</th>
+      <th>Sep</th>
+      <td>100</td>
+      <td>100</td>
+      <td>100</td>
+      <td>300</td>
+      <td rowspan="3">900</td>
+    </tr>
+    <tr>
+      <th>Oct</th>
+      <td>100</td>
+      <td>100</td>
+      <td>100</td>
+      <td>300</td>
+    </tr>
+    <tr>
+      <th>Nov</th>
+      <td>100</td>
+      <td>100</td>
+      <td>100</td>
+      <td>300</td>
+    </tr>
+    <tr>
+      <th>Winter</th>
+      <th>Dec</th>
+      <td>100</td>
+      <td>100</td>
+      <td>100</td>
+      <td>300</td>
+      <td>300</td>
+    </tr>
+  </table>
+
+</body>
+
+</html>

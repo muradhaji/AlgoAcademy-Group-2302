@@ -1,0 +1,55 @@
+header,
+footer {
+  background-color: gray;
+  color: white;
+  text-align: center;
+}
+
+nav {
+  background-color: bisque;
+}
+
+article {
+  background-color: darkcyan;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+header,
+nav,
+article,
+footer {
+  padding: 24px;
+}
+
+/* Layout CSS */
+
+nav {
+  width: 30%;
+}
+
+article {
+  width: 70%;
+}
+
+nav,
+article {
+  float: left;
+  box-sizing: border-box;
+  height: 300px;
+}
+
+footer {
+  clear: both;
+}
+
+@media (max-width: 530px) {
+  nav,
+  article {
+    width: 100%;
+    height: auto;
+  }
+}

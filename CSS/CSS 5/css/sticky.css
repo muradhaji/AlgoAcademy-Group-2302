@@ -1,0 +1,33 @@
+body {
+  width: 4000px;
+}
+
+span {
+  display: inline-block;
+  width: 300px;
+  height: 200px;
+  background-color: darkcyan;
+}
+
+span.special {
+  background-color: orangered;
+
+  /* position: sticky; */
+
+  /* top: -50px; */
+  /* bottom: 50px; */
+  /* left: 50px; */
+  /* right: 50px; */
+}
+
+div.bottom {
+  background-color: orangered;
+  padding: 8px 16px;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  width: 500px;
+}

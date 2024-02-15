@@ -1,0 +1,41 @@
+section.learnMore {
+  font-size: 18px;
+  margin-top: 51px;
+  padding: 48px;
+  height: calc(100vh - 51px);
+  box-sizing: border-box;
+  color: white;
+
+  background-image: url(../images/mac.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+
+  position: relative;
+}
+section.learnMore > h1 {
+  font-size: 64px;
+}
+section.learnMore > p {
+}
+section.learnMore > a {
+  padding: 16px;
+  display: inline-block;
+  background-color: #cccccc8b;
+  text-decoration: none;
+  color: black;
+}
+section.learnMore > a:hover {
+  background-color: #cccccc;
+}
+section.learnMore > div.mediaIcons {
+  position: absolute;
+  left: 48px;
+  bottom: 24px;
+}
+section.learnMore > div.mediaIcons > i {
+  color: gray;
+}
+section.learnMore > div.mediaIcons > i:hover {
+  opacity: 0.4;
+}

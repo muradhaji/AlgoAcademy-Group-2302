@@ -1,0 +1,26 @@
+section#about {
+  text-align: center;
+  padding: 144px 48px;
+}
+section#about > h2 {
+  font-weight: 400;
+}
+section#about > p {
+}
+section#about > div.features {
+  display: flex;
+  gap: 16px;
+  margin-top: 48px;
+}
+section#about > div.features > div.feature {
+}
+section#about > div.features > div.feature > i {
+  font-size: 64px;
+  margin-bottom: 24px;
+}
+section#about > div.features > div.feature > p {
+}
+section#about > div.features > div.feature > p:last-child {
+  font-size: 15px;
+  line-height: 2em;
+}

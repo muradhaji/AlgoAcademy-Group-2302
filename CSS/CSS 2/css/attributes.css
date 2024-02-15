@@ -1,0 +1,42 @@
+/* h1[class] {
+  color: red;
+} */
+
+/* input[placeholder] {
+  background-color: red;
+} */
+
+/* input[placeholder] {
+  background-color: red;
+} */
+
+/* h1[title='door'] {
+  color: red;
+} */
+
+/* h1[title~='door'] {
+  color: red;
+} */
+
+/* h1[title|='door'] {
+  color: red;
+} */
+
+/* h1[title^='door'] {
+  color: red;
+} */
+
+/* h1[title$='door'] {
+  color: red;
+} */
+
+/* h1[title*='door'] {
+  color: red;
+} */
+
+/* h1[class='door'] {
+  color: red;
+}
+h1.door {
+  color: red;
+} */

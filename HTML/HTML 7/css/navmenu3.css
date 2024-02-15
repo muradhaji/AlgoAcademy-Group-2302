@@ -1,0 +1,25 @@
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: gray;
+  overflow: auto;
+}
+
+li {
+  /* display: inline; */
+  float: left;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  padding: 16px;
+  display: inline-block;
+  font-weight: bold;
+  font-family: 'Segoe UI';
+}
+
+a:hover {
+  background-color: black;
+}

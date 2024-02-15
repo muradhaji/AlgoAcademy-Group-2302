@@ -1,0 +1,64 @@
+* {
+  /* box-sizing: border-box; */
+  color: #dafffb;
+}
+
+header {
+  grid-area: header;
+}
+nav {
+  grid-area: menu;
+}
+article {
+  grid-area: main;
+}
+footer {
+  grid-area: footer;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: grid;
+  grid-template-areas:
+    'header header'
+    'menu main'
+    'footer footer';
+}
+
+header,
+nav,
+article,
+footer {
+  padding: 24px;
+}
+
+header,
+footer {
+  background-color: #001c30;
+  color: white;
+}
+
+nav {
+  background-color: #176b87;
+}
+
+nav ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+article {
+  background-color: #64ccc5;
+  text-align: justify;
+}
+
+footer {
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  body {
+    grid-template-areas: 'header' 'menu' 'main' 'footer';
+  }
+}

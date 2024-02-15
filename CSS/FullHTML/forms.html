@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Forms</title>
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/menu.css">
+</head>
+
+<body>
+
+  <ul class="menu">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="buttons.html">Buttons</a></li>
+    <li><a href="images.html">Images</a></li>
+    <li><a href="tables.html">Tables</a></li>
+    <li><a href="lists.html">Lists</a></li>
+    <li><a href="iframes.html">Iframes</a></li>
+    <li><a href="forms.html">Forms</a></li>
+    <li><a href="layouts.html">Layouts</a></li>
+    <li><a href="menus.html">Menus</a></li>
+  </ul>
+
+  <h1>With forms you can collect data from users!</h1>
+
+  <form action="https://www.w3schools.com/action_page.php" id="testForm" autocomplete="off">
+
+    <input type="hidden" name="user_id" value="42">
+
+    <label for="text_inp">Your name: (user_name) (box size 40)</label><br>
+    <input type="text" name="user_name" id="text_inp" size="40">
+    <br><br>
+
+    <label for="text_inp_disabled">Your surname: (disabled)</label><br>
+    <input type="text" name="user_surname" id="text_inp_disabled" disabled>
+    <br><br>
+
+    <label for="email_inp">Your email: (user_email) (autofocused)</label><br>
+    <input type="email" name="user_email" id="email_inp" autofocus>
+    <br><br>
+
+    <label for="password_inp">Your password: (user_password) (minimum length 4 maximum length 10)</label><br>
+    <input type="password" name="user_password" id="password_inp" minlength="4" maxlength="10">
+    <br><br>
+
+    <label for="tel_inp">Your telephone: (user_tel) (match and suggestion)</label><br>
+    <input type="tel" name="user_tel" id="tel_inp" pattern="[+][0-9]{3} [0-9]{2} [0-9]{3} [0-9]{2} [0-9]{2}"
+      placeholder="+994 12 345 67 89">
+    <br><br>
+
+    <label for="url_inp">Your link: (user_link)</label><br>
+    <input type="url" name="user_link" id="url_inp">
+    <br><br>
+
+    <label for="number_inp">Your age: (user_age) (minimum 18 maximum 67)</label><br>
+    <input type="number" name="user_age" id="number_inp" min="18" max="67">
+    <br><br>
+
+    <label for="select_list_profession">Your profession: (user_profession:
+      [front-end, back-end, full-stack, network-admin, network-security])</label><br>
+    <select name="user_profession" id="select_list_profession">
+      <optgroup label="Web Development">
+        <option value="front-end">Front-End</option>
+        <option value="back-end">Back-End</option>
+        <option value="full-stack">Full Stack</option>
+      </optgroup>
+      <optgroup label="Networking">
+        <option value="network-admin">Network Admin</option>
+        <option value="network-security">Network Security</option>
+      </optgroup>
+    </select>
+    <br><br>
+
+    <label for="select_list_languages">Languages you know: (coding_languages: [js, py, cpp]) (multiple
+      selection)</label><br>
+    <select name="coding_languages" id="select_list_languages" multiple>
+      <option value="js">JavaScript</option>
+      <option value="py">Python</option>
+      <option value="cpp">C++</option>
+    </select>
+    <br><br>
+
+    <label for="datalist_inp">Your favorite OS: (fav_os: [Linux, Windows, MacOS])</label><br>
+    <input list="os_list" name="fav_os" id="datalist_inp">
+    <datalist id="os_list">
+      <option value="Linux"></option>
+      <option value="Windows"></option>
+      <option value="MacOS"></option>
+    </datalist>
+    <br><br>
+
+    <label for="color_inp">Your favorite color: (fav_color)</label><br>
+    <input type="color" name="fav_color" id="color_inp">
+    <br><br>
+
+    <label for="range_inp">Your rate: (user_rate) (values: 0, 10, 20 ...)</label><br>
+    <input type="range" name="user_rate" id="range_inp" step="10">
+    <br><br>
+
+    <label for="date_inp">Date of birth: (user_birthday) (mandatory)</label><br>
+    <input type="date" name="user_birthday" id="date_inp" required>
+    <br><br>
+
+    <label for="">Working hours: (working_hour_from, working_hour_to)</label><br>
+    <label for="time_inp_from">From:</label>
+    <input type="time" name="working_hour_from" id="time_inp_from">
+    <label for="time_inp_to">To:</label>
+    <input type="time" name="working_hour_to" id="time_inp_to">
+    <br><br>
+
+    <label for="">Work experience: (user_experience_from, user_experience_to)</label><br>
+    <label for="month_inp_from">From:</label>
+    <input type="month" name="user_experience_from" id="month_inp_from">
+    <label for="month_inp_to">To:</label>
+    <input type="month" name="user_experience_to" id="month_inp_to">
+    <br><br>
+
+    <label for="datetime_local_inp">Your favorite moment: (fav_moment) (initial date-time)</label><br>
+    <input type="datetime-local" name="fav_moment" id="datetime_local_inp" value="2019-10-19T15:30">
+    <br><br>
+
+    <label for="week_inp">Your favorite week: (fav_week)</label><br>
+    <input type="week" name="fav_week" id="week_inp">
+    <br><br>
+
+    <label for="file_inp">Your CV: (user_cv)</label><br>
+    <input type="file" name="user_cv" id="file_inp">
+    <br><br>
+
+    <label for="">Gender: (user_gender: [male, female]) (default checked)</label><br>
+    <input type="radio" name="user_gender" id="gender_male" value="male" checked>
+    <label for="gender_male">Male</label>
+    <input type="radio" name="user_gender" id="gender_female" value="female">
+    <label for="gender_female">Female</label>
+    <br><br>
+
+    <label for="">Languages: (user_language: [az, en, tr])</label><br>
+    <input type="checkbox" name="user_language" id="language_az" value="az">
+    <label for="language_az">Azerbaijani</label>
+    <input type="checkbox" name="user_language" id="language_en" value="en">
+    <label for="language_en">English</label>
+    <input type="checkbox" name="user_language" id="language_tr" value="tr">
+    <label for="language_tr">Turkish</label>
+    <br><br>
+
+    <label for="textarea_inp">Your message: (user_message) (only read)</label><br>
+    <textarea name="user_message" id="textarea_inp" cols="42" rows="13" readonly>Here is your message!</textarea>
+    <br><br>
+
+    <fieldset>
+      <legend>Form Buttons</legend>
+      <input type="submit" value="Submit with input">
+      <input type="reset" value="Reset with input">
+      <br><br>
+
+      <button type="submit">Submit with button</button>
+      <button type="reset">Reset with button</button>
+      <br><br>
+
+      <button type="submit" formaction="https://www.w3schools.com/action_page.php">Submit to W3Schools</button>
+      <button type="submit" formaction="">Submit to current page</button>
+      <br><br>
+
+      <button type="submit">Submit with validate</button>
+      <button type="submit" formnovalidate>Submit without validate</button>
+      <br><br>
+
+      <button type="submit" formmethod="get">Submit with GET method</button>
+      <button type="submit" formmethod="post">Submit with POST method</button>
+    </fieldset>
+  </form>
+
+  <h2>Buttons out of form</h2>
+
+  <button form="testForm" type="submit" formtarget="_self">Submit in current tab</button>
+  <button form="testForm" type="submit" formtarget="_blank">Submit in new tab</button>
+
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+body {
+  /* position: relative; */
+}
+
+.parent1 {
+  width: 600px;
+  height: 600px;
+  background-color: gray;
+
+  position: relative;
+}
+.parent2 {
+  width: 400px;
+  height: 400px;
+  background-color: darkcyan;
+
+  position: relative;
+}
+
+.child1,
+.child2,
+.child3 {
+  width: 300px;
+  height: 100px;
+}
+
+.child1 {
+  background-color: orangered;
+}
+.child2 {
+  background-color: blueviolet;
+}
+.child3 {
+  background-color: brown;
+}
+
+.child1 {
+  /* position: static; */
+  /* position: relative; */
+  /* position: absolute; */
+  position: fixed;
+
+  /* top: 50px; */
+  bottom: 50px;
+  /* left: 50px; */
+  right: 50px;
+}
+
+.child2 {
+  position: fixed;
+  right: 60px;
+  bottom: 60px;
+}
+
+.child1 {
+  z-index: -1;
+}
+
+.child2 {
+  z-index: -2;
+}

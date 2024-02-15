@@ -1,0 +1,28 @@
+ul#list1,
+ul#list2 {
+  background-color: #213555;
+  color: #f0f0f0;
+  border-radius: 8px;
+}
+
+ul#list2 {
+  padding: 20px 20px 20px 40px;
+  list-style-type: '\1F4BB';
+}
+
+ul#list1 li,
+ul#list2 li {
+  padding: 8px;
+}
+
+ul#list1 ul.level2 {
+  margin-top: 8px;
+}
+
+ul#list1 ul.level2 li,
+ul#list2 li {
+  background-color: #4f709c;
+  margin-bottom: 4px;
+  padding: 8px;
+  border-radius: 8px;
+}
