@@ -203,3 +203,112 @@
 // amount = 27
 // answer = "1x20, 1x5, 2x1"
 
+// function sumFunc() {
+//   console.log(this);
+// }
+
+// let sumFunc = function () {
+//   console.log(this);
+// };
+
+// let sumFunc = () => {
+//   console.log(this);
+// };
+
+// let obj = {
+//   sum: sumFunc,
+// };
+
+// sumFunc();
+// obj.sum();
+
+// function createUser(name, age) {
+//   return {
+//     name,
+//     age,
+//   };
+// }
+
+// function User(name, age) {
+//   this.name = name;
+//   this.age = age;
+// }
+
+// let user = createUser('John', 27);
+
+// let user2 = new User('John', 27);
+
+// console.log(user);
+// console.log(user2);
+
+// let user = { name: 'John', age: 27, id: 13 };
+
+// // user.fid = 42;
+
+// // let id = Symbol();
+// let id = Symbol('facebook id');
+
+// user[id] = 42;
+
+// console.log(user);
+// console.log(user[id]);
+
+// for (key in user) {
+//   console.log(key);
+// }
+
+// console.log(Object.keys(user));
+
+// let arr = [
+//   { name: 'John', age: 27 },
+//   { name: 'Mike', age: 42 },
+//   { name: 'Ross', age: 33 },
+// ];
+
+// for (index in arr) {
+//   console.log(arr[index]);
+//   console.log(arr[index].name, arr[index].age);
+// }
+
+let bankNotes = [
+  { value: 200, count: 3 },
+  { value: 100, count: 0 },
+  { value: 50, count: 7 },
+  { value: 20, count: 1 },
+  { value: 10, count: 0 },
+  { value: 5, count: 2 },
+  { value: 1, count: 3 },
+];
+
+function cashOut(amount) {
+  let bankNotesCopy = structuredClone(bankNotes);
+  let answer = '';
+
+  for (let i = 0; i < bankNotesCopy.length; i++) {
+    let final = Math.min(
+      Math.floor(amount / bankNotesCopy[i].value),
+      bankNotesCopy[i].count
+    );
+    if (final > 0) {
+      amount -= final * bankNotesCopy[i].value;
+      answer += `${final}x${bankNotesCopy[i].value} `;
+      bankNotesCopy[i].count -= final;
+    }
+  }
+  // debugger;
+  if (amount > 0) {
+    // alert('Impossible!');
+    console.log('Impossible!');
+  } else {
+    // alert(answer);
+    console.log(answer);
+    bankNotes = bankNotesCopy;
+  }
+}
+
+let num = 0;
+
+while (num != null) {
+  num = prompt('Enter amount');
+  cashOut(Number(num));
+}
