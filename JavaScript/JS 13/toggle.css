@@ -1,0 +1,33 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+input {
+  height: 30px;
+  width: 30px;
+  appearance: none;
+  background-color: black;
+  border-radius: 50%;
+  opacity: 0;
+  transition: all 0.2s;
+}
+input:hover {
+  cursor: pointer;
+}
+.tri-state-toggle {
+  display: flex;
+  justify-content: center;
+  border: 3px solid black;
+  border-radius: 50px;
+}
+#one {
+  opacity: 1;
+}
