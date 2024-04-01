@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" style="overflow: hidden;">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #parent {
+      width: 400px;
+      height: 400px;
+      background-color: darkcyan;
+    }
+
+    #middle {
+      width: 300px;
+      height: 300px;
+      background-color: orangered;
+    }
+
+    #child {
+      width: 200px;
+      height: 200px;
+      background-color: black;
+      translate: 430px 0px;
+    }
+
+    div#loading {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: darkcyan;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    div#loading span.spinner {
+      display: inline-block;
+      width: 100px;
+      height: 100px;
+      border: 8px solid white;
+      border-bottom-color: darkcyan;
+      border-radius: 50%;
+      animation-name: loadSpinner;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+    }
+
+    @keyframes loadSpinner {
+      0% {
+        rotate: 0deg;
+      }
+
+      100% {
+        rotate: 360deg;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- <h1 id="myh1">Heading 1</h1>
+  <h1 id="myh2">Heading 2</h1>
+  <h1 id="myh3">Heading 3</h1> -->
+
+  <!-- <div id="parent">
+    <div id="middle">
+      <div id="child">
+      </div>
+    </div>
+  </div> -->
+
+  <!-- <a href="https://w3schools.com" target="_blank">Link</a> -->
+
+  <form action="" target="_blank">
+    <input type="text" name="title" id="title"> <br>
+    <input type="number" name="price" id="price"> <br>
+    <textarea name="description" id="description" cols="30" rows="10"></textarea> <br>
+    <select name="category" id="category">
+      <option value="electronic">Electronic</option>
+      <option value="jewelery">Jewelery</option>
+    </select> <br>
+    <input type="submit" value="Submit">
+  </form>
+
+  <!-- <div id="loading">
+    <span class="spinner"></span>
+  </div>
+
+  <button onclick="getData()">Get data</button> -->
+
+  <h1 title="Thi is heading">Heading</h1>
+
+  <script src="js/events.js"></script>
+</body>
+
+</html>

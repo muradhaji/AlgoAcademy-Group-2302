@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    header {
+      background-color: darkcyan;
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+    }
+
+    nav {}
+
+    header>div#btn,
+    header>nav>a {
+      padding: 16px;
+      display: inline-block;
+    }
+
+    header>div#btn {
+      display: none;
+      cursor: pointer;
+    }
+
+    div#hiddenMenu {
+      position: absolute;
+      top: 100%;
+      background-color: cyan;
+      width: 100%;
+    }
+
+    div#hiddenMenu a {
+      padding: 16px;
+      display: block;
+    }
+
+    @media (max-width: 600px) {
+      header>div#btn {
+        display: inline-block;
+      }
+
+      header>nav>a.hide {
+        display: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#" class="hide">Link 2</a>
+      <a href="#" class="hide">Link 3</a>
+      <a href="#" class="hide">Link 4</a>
+      <a href="#" class="hide">Link 5</a>
+    </nav>
+
+    <div id="hiddenMenu" style="display: none;">
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+      <a href="#">Link 4</a>
+      <a href="#">Link 5</a>
+    </div>
+
+    <div id="btn" onclick="toggleHiddenMenu()">Button</div>
+  </header>
+
+  <script>
+    function toggleHiddenMenu() {
+      let hidMenu = document.getElementById("hiddenMenu");
+      if (hidMenu.style.display == "none") {
+        hidMenu.style.display = "block"
+      } else {
+        hidMenu.style.display = "none"
+      }
+    }
+    window.addEventListener("resize", () => {
+      let hidMenu = document.getElementById("hiddenMenu");
+      if (window.innerWidth > 600 && hidMenu.style.display == "block") {
+        hidMenu.style.display = "none"
+      }
+    })
+  </script>
+
+</body>
+
+</html>
