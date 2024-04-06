@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .createTodo {
+      display: flex;
+      gap: 16px;
+      font-size: 20px;
+      margin-bottom: 24px;
+    }
+
+    .createTodo .inputContainer {
+      flex: 4;
+    }
+
+    .createTodo .inputContainer input#todoContent {
+      width: 100%;
+      box-sizing: border-box;
+      font-size: 20px;
+      padding: 8px 16px;
+    }
+
+    .createTodo div.createButton {
+      flex: 1;
+      background-color: darkcyan;
+      padding: 8px 16px;
+      border-radius: 8px;
+      color: white;
+      user-select: none;
+      cursor: pointer;
+    }
+
+
+    #todoContainer {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    #todoContainer>.todo {
+      background-color: darkcyan;
+      padding: 20px;
+      display: flex;
+      font-size: 24px;
+    }
+
+    #todoContainer>.todo .status {
+      user-select: none;
+      cursor: pointer;
+      flex: 1;
+    }
+
+    #todoContainer>.todo .content {
+      flex: 3;
+      color: white;
+
+    }
+
+    #todoContainer>.todo .buttons {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    #todoContainer>.todo .buttons div {
+      background-color: white;
+      padding: 8px 16px;
+      user-select: none;
+      cursor: pointer;
+    }
+
+    #todoContainer>.todo .buttons .edit {}
+
+    #todoContainer>.todo .buttons .delete {}
+  </style>
+</head>
+
+<body>
+
+  <div class="createTodo">
+    <div class="inputContainer">
+      <input type="text" id="todoContent">
+    </div>
+    <div class="createButton" onclick="createTodo()">Create Todo</div>
+  </div>
+
+  <div id="todoContainer">
+
+  </div>
+
+  <!-- <script src="js/data.js"></script> -->
+  <script src="js/todo.js"></script>
+
+</body>
+
+</html>
