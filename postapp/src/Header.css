@@ -1,0 +1,15 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+  font-size: 20px;
+  border-bottom: 1px solid #ccc;
+}
+header div.logo {
+  letter-spacing: 4px;
+  user-select: none;
+  cursor: pointer;
+}
+header div.menuToggle {
+  cursor: pointer;
+}

@@ -1,0 +1,9 @@
+main {
+  display: flex;
+  padding: 16px;
+  gap: 16px;
+}
+
+main div.routeHolder {
+  flex: 1;
+}
