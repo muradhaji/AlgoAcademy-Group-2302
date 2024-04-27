@@ -1,8 +1,10 @@
 import './Aside.css';
 
-function Aside() {
+function Aside(props) {
+  const { collapsed } = props;
+
   return (
-    <aside>
+    <aside className={collapsed ? 'collapsed' : ''}>
       <nav>
         <a href='/'>Home</a>
         <a href='/posts'>Posts</a>
