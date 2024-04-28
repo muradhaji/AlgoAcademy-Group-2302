@@ -1,4 +1,5 @@
 import './Aside.css';
+import { Link } from 'react-router-dom';
 
 function Aside(props) {
   const { collapsed } = props;
@@ -6,9 +7,9 @@ function Aside(props) {
   return (
     <aside className={collapsed ? 'collapsed' : ''}>
       <nav>
-        <a href='/'>Home</a>
-        <a href='/posts'>Posts</a>
-        <a href='/users'>Users</a>
+        <Link to='/'>Home</Link>
+        <Link to='/posts'>Posts</Link>
+        <Link to='/users'>Users</Link>
       </nav>
     </aside>
   );
