@@ -8,6 +8,7 @@ import Users from './Users';
 import { useState } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import PostDetails from './PostDetails';
+import UserDetails from './UserDetails';
 
 function App() {
   let [isMenuCollapsed, setIsMenuCollapsed] = useState(false);
@@ -28,6 +29,7 @@ function App() {
               <Route path='/posts' element={<Posts />} />
               <Route path='/posts/:id' element={<PostDetails />} />
               <Route path='/users' element={<Users />} />
+              <Route path='/users/:id' element={<UserDetails />} />
               <Route path='*' element={<div>404, Page not found :(</div>} />
             </Routes>
           </div>

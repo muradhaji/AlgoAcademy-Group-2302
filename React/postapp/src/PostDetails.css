@@ -1,0 +1,16 @@
+div.postDetailsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+div.commentsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+div.commentContainer {
+  padding: 8px;
+  background-color: #f2f2f2;
+}

@@ -1,0 +1,16 @@
+main {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  gap: 16px;
+}
+
+main div.routeHolder {
+  flex: 1;
+}
+
+@media (min-width: 768px) {
+  main {
+    flex-direction: row;
+  }
+}

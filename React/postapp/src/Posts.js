@@ -4,31 +4,31 @@ import Post from './Post';
 import './Posts.css';
 
 function Posts() {
-  let [postList, setPostList] = useState([]);
-  let [loading, setLoading] = useState(false);
+  let [posts, setPosts] = useState([]);
+  let [postsLoading, setPostsLoading] = useState(false);
 
   useEffect(() => {
-    setLoading(true);
+    setPostsLoading(true);
     fetch('https://jsonplaceholder.typicode.com/posts', { method: 'GET' })
       .then(function (res) {
         return res.json();
       })
       .then(function (data) {
-        setPostList(data);
-        setLoading(false);
+        setPosts(data);
+        setPostsLoading(false);
       })
       .catch(function (err) {
         console.log(err);
-        setLoading(false);
+        setPostsLoading(false);
       });
   }, []);
 
   return (
     <div className='postsHolder'>
-      {loading
-        ? 'Loading...'
-        : postList.length
-        ? postList.map(function (post) {
+      {postsLoading
+        ? 'Posts loading ...'
+        : posts.length
+        ? posts.map(function (post) {
             return <Post data={post} />;
           })
         : 'Empty..'}
