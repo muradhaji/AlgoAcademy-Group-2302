@@ -1,0 +1,229 @@
+html {
+  background-image: url(bg.avif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+/* div.test {
+  width: 200px;
+  height: 200px;
+  background-color: darkcyan;
+
+  transition-property: width, background-color;
+  transition-duration: 3s;
+  transition-delay: 2s;
+  transition-timing-function: ease-in-out;
+}
+
+div.test:hover {
+  width: 400px;
+  height: 400px;
+}
+
+div.test:active {
+  background-color: orangered;
+} */
+
+/* div.test {
+  width: 200px;
+  height: 200px;
+  background-color: darkcyan;
+
+  animation-name: myAnimation;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+  animation-direction: alternate-reverse;
+  animation-timing-function: cubic-bezier(1,-0.01,0,1);
+  animation-delay: 3s;
+}
+
+div.test:hover {
+  animation-play-state: paused;
+}
+
+@keyframes myAnimation {
+  0% {
+    translate: 0px 0px;
+    box-shadow: 0px 0px 0px 0px rgba(0, 139, 139, 0.5);
+  }
+  30% {
+    translate: 400px 0px;
+    box-shadow: -100px 0px 16px 0px rgba(0, 139, 139, 0.5);
+  }
+  31% {
+    translate: 400px 0px;
+    box-shadow: 0px 0px 16px 0px rgba(0, 139, 139, 0.5);
+  }
+  70% {
+    translate: 400px 400px;
+    box-shadow: 0px -100px 16px 0px rgba(0, 139, 139, 0.5);
+  }
+  71% {
+    translate: 400px 400px;
+    box-shadow: 0px 0px 16px 0px rgba(0, 139, 139, 0.5);
+  }
+  99% {
+    translate: 0px 400px;
+    box-shadow: 100px 0px 16px 0px rgba(0, 139, 139, 0.5);
+  }
+  100% {
+    translate: 0px 400px;
+    box-shadow: 0px 0px 16px 0px rgba(0, 139, 139, 0.5);
+  }
+}
+
+@keyframes changeColor {
+  0% {
+    background-color: darkcyan;
+    letter-spacing: 0px;
+  }
+  33.33% {
+    background-color: orangered;
+    letter-spacing: 12px;
+  }
+  66.66% {
+    background-color: chartreuse;
+    letter-spacing: 12px;
+  }
+  100% {
+    background-color: darkcyan;
+    letter-spacing: 0px;
+  }
+} */
+
+div.spinner {
+  width: 200px;
+  height: 200px;
+  border: 16px solid darkcyan;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+
+  animation-name: spinnerRotate;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes spinnerRotate {
+  0% {
+    rotate: 0deg;
+    transform-origin: 200px 200px;
+  }
+  100% {
+    rotate: 360deg;
+    transform-origin: 200px 200px;
+  }
+}
+
+div.test {
+  width: 200px;
+  height: 200px;
+  background-color: darkcyan;
+  /* transform: skewX(-20deg); */
+  /* transform: skewY(-20deg); */
+  /* transform: skewY(1rad); */
+  /* transform: skewY(0.125turn); */
+
+  /* transform: scaleX(2); */
+  /* transform: scaleY(2); */
+  /* transform: scale(2, 2); */
+  /* transform: scale(0.5, 0.5); */
+
+  /* transform: rotateX(0deg); */
+  /* transform: rotateY(0deg); */
+}
+
+div.clock {
+  width: 300px;
+  height: 300px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  position: relative;
+  border-radius: 50%;
+  /* backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.1); */
+
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+
+  div.number {
+    color: white;
+    position: absolute;
+  }
+  div.number3 {
+    top: 50%;
+    right: 16px;
+    translate: 0px -50%;
+  }
+  div.number6 {
+    left: 50%;
+    bottom: 16px;
+    translate: -50% 0px;
+  }
+  div.number9 {
+    top: 50%;
+    left: 16px;
+    translate: 0px -50%;
+  }
+  div.number12 {
+    left: 50%;
+    top: 16px;
+    translate: -50% 0px;
+  }
+
+  div.lines {
+    width: 268px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+  }
+  div.lines1 {
+    rotate: 30deg;
+  }
+  div.lines2 {
+    rotate: 60deg;
+  }
+  div.lines3 {
+    rotate: -30deg;
+  }
+  div.lines4 {
+    rotate: -60deg;
+  }
+  div.line {
+    border: 2px solid white;
+    width: 12px;
+  }
+
+  div.hand {
+    border: 4px solid white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -4px -4px;
+    border-radius: 4px;
+
+    transition-property: rotate;
+    transition-duration: 500ms;
+  }
+  div.hand.hour {
+    width: 30px;
+    transform-origin: 4px 4px;
+  }
+  div.hand.minute {
+    width: 50px;
+    transform-origin: 4px 4px;
+  }
+  div.hand.second {
+    width: 90px;
+    transform-origin: 4px 4px;
+  }
+}
