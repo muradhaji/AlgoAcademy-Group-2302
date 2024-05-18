@@ -4,7 +4,6 @@ import MyContext from './context/MyContext';
 
 function Header() {
   let context = useContext(MyContext);
-  console.log(context);
   let { toggleFunc } = context;
 
   return (

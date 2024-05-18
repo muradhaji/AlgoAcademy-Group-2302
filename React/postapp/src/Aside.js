@@ -13,6 +13,7 @@ function Aside() {
         <Link to='/'>Home</Link>
         <Link to='/posts'>Posts</Link>
         <Link to='/users'>Users</Link>
+        <Link to='/localposts'>Local posts</Link>
       </nav>
     </aside>
   );
