@@ -1,7 +1,11 @@
+import { useContext } from 'react';
 import './Header.css';
+import MyContext from './context/MyContext';
 
-function Header(props) {
-  let { toggleFunc } = props;
+function Header() {
+  let context = useContext(MyContext);
+  console.log(context);
+  let { toggleFunc } = context;
 
   return (
     <header className='container'>

@@ -1,11 +1,11 @@
-import { useEffect } from 'react';
-import { useState } from 'react';
+import { useContext, useEffect } from 'react';
 import Post from './Post';
 import './Posts.css';
+import MyContext from './context/MyContext.js';
 
 function Posts() {
-  let [posts, setPosts] = useState([]);
-  let [postsLoading, setPostsLoading] = useState(false);
+  let context = useContext(MyContext);
+  let { posts, setPosts, postsLoading, setPostsLoading } = context;
 
   useEffect(() => {
     setPostsLoading(true);

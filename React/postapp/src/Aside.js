@@ -1,8 +1,11 @@
+import { useContext } from 'react';
 import './Aside.css';
 import { Link } from 'react-router-dom';
+import MyContext from './context/MyContext';
 
-function Aside(props) {
-  const { collapsed } = props;
+function Aside() {
+  let context = useContext(MyContext);
+  const { collapsed } = context;
 
   return (
     <aside className={collapsed ? 'collapsed' : ''}>
