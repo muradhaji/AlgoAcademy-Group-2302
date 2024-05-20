@@ -30,7 +30,11 @@ function Users() {
         : users.length
         ? users.map((user) => {
             return (
-              <Link to={`/users/${user.id}`} className='userContainer'>
+              <Link
+                to={`/users/${user.id}`}
+                className='userContainer'
+                key={user.id}
+              >
                 <span>{user.name}</span>
                 <span>{user.email}</span>
               </Link>

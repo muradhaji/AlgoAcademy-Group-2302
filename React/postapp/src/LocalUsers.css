@@ -1,4 +1,4 @@
-div.localposts {
+div.localusers {
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -18,15 +18,6 @@ div.localposts {
     }
     a:hover {
       background-color: #ccc;
-    }
-  }
-  div.localPostsHolder {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    a.post {
-      padding: 8px;
-      background-color: #f2f2f2;
     }
   }
 }

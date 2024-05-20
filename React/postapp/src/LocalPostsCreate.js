@@ -1,26 +1,15 @@
-import { useContext, useEffect } from 'react';
-import MyContext from './context/MyContext';
+import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './LocalPostsCreate.css';
 
 function LocalPostsCreate() {
-  let { localUsers, setLocalUsers, localUsersLoading, setLocalUsersLoading } =
-    useContext(MyContext);
+  let [users, setUsers] = useState([]);
 
   let navigate = useNavigate();
 
   useEffect(() => {
-    setLocalUsersLoading(true);
-    fetch('https://jsonplaceholder.typicode.com/users', { method: 'GET' })
-      .then((res) => res.json())
-      .then((data) => {
-        setLocalUsers(data);
-        setLocalUsersLoading(false);
-      })
-      .catch((err) => {
-        console.log(err);
-        setLocalUsersLoading(false);
-      });
+    let localusers = JSON.parse(localStorage.getItem('localusers') || '[]');
+    setUsers(localusers);
   }, []);
 
   const handleSubmit = (e) => {
@@ -46,19 +35,19 @@ function LocalPostsCreate() {
 
     localStorage.setItem('localposts', JSON.stringify(localPosts));
 
-    navigate('/localposts');
+    navigate(`/localposts/${newPost.id}`);
   };
 
   return (
     <>
-      <h2>Create new post:</h2>
+      <h2>Create post:</h2>
       <form className='createPost' onSubmit={handleSubmit}>
         <select name='userId'>
           <option disabled selected hidden>
             User
           </option>
-          {localUsers.length &&
-            localUsers.map((user) => (
+          {users.length &&
+            users.map((user) => (
               <option value={user.id} key={user.id}>
                 {user.username}
               </option>

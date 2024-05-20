@@ -9,17 +9,20 @@ import { useState } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import PostDetails from './PostDetails';
 import UserDetails from './UserDetails';
-import MyContext from './context/MyContext.js';
-import LocalPosts from './LocalPosts.js';
-import LocalPostsCreate from './LocalPostsCreate.js';
+import MyContext from './context/MyContext';
+import LocalPosts from './LocalPosts';
+import LocalPostDetails from './LocalPostDetails';
+import LocalPostsCreate from './LocalPostsCreate';
+import LocalPostsEdit from './LocalPostsEdit';
+import LocalUsers from './LocalUsers';
+import LocalUsersDetails from './LocalUsersDetails';
+import LocalUsersEdit from './LocalUsersEdit';
+import LocalUsersCreate from './LocalUsersCreate';
 
 function App() {
   let [isMenuCollapsed, setIsMenuCollapsed] = useState(false);
   let [posts, setPosts] = useState([]);
   let [postsLoading, setPostsLoading] = useState(false);
-
-  let [localUsers, setLocalUsers] = useState([]);
-  let [localUsersLoading, setLocalUsersLoading] = useState([]);
 
   function toggleMenu() {
     setIsMenuCollapsed(!isMenuCollapsed);
@@ -35,10 +38,6 @@ function App() {
           setPostsLoading,
           collapsed: isMenuCollapsed,
           toggleFunc: toggleMenu,
-          localUsers,
-          setLocalUsers,
-          localUsersLoading,
-          setLocalUsersLoading,
         }}
       >
         <div className='App'>
@@ -53,10 +52,22 @@ function App() {
                 <Route path='/users' element={<Users />} />
                 <Route path='/users/:id' element={<UserDetails />} />
                 <Route path='/localposts' element={<LocalPosts />} />
+                <Route path='/localposts/:id' element={<LocalPostDetails />} />
                 <Route
                   path='/localposts/create'
                   element={<LocalPostsCreate />}
                 />
+                <Route
+                  path='/localposts/edit/:id'
+                  element={<LocalPostsEdit />}
+                />
+                <Route path='/localusers' element={<LocalUsers />} />
+                <Route path='/localusers/:id' element={<LocalUsersDetails />} />
+                <Route
+                  path='/localusers/create'
+                  element={<LocalUsersCreate />}
+                />
+                <Route path='/localusers/edit/:id' element={<LocalUsersEdit />} />
                 <Route path='*' element={<div>404, Page not found :(</div>} />
               </Routes>
             </div>

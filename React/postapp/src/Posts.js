@@ -21,6 +21,7 @@ function Posts() {
         console.log(err);
         setPostsLoading(false);
       });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
@@ -29,7 +30,7 @@ function Posts() {
         ? 'Posts loading ...'
         : posts.length
         ? posts.map(function (post) {
-            return <Post data={post} />;
+            return <Post data={post} key={post.id} />;
           })
         : 'Empty..'}
     </div>

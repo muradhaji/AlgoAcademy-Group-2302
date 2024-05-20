@@ -1,4 +1,4 @@
-import { isEmpty, isMap } from 'lodash';
+import { isEmpty } from 'lodash';
 import { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import './PostDetails.css';
@@ -32,7 +32,7 @@ function PostDetails() {
         console.log(err);
         setPostLoading(false);
       });
-  }, []);
+  }, [id]);
 
   useEffect(() => {
     if (!isEmpty(post)) {
@@ -111,7 +111,7 @@ function PostDetails() {
                 ? 'Comments loading ...'
                 : comments.length
                 ? comments.map((comment) => (
-                    <div className='commentContainer'>
+                    <div className='commentContainer' key={comment.id}>
                       <div>
                         <b>{comment.email}</b>
                       </div>

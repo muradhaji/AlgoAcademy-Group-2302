@@ -79,7 +79,7 @@ function UserDetails() {
             {postsLoading
               ? 'Posts loading ...'
               : posts.length
-              ? posts.map((post) => <Post data={post} />)
+              ? posts.map((post) => <Post data={post} key={post.id} />)
               : 'There is not any posts.'}
           </div>
         </>

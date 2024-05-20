@@ -1,0 +1,71 @@
+div.postDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  div.buttons {
+    display: flex;
+    gap: 8px;
+
+    h2 {
+      margin: 0;
+      flex: 1;
+    }
+    a,
+    div {
+      padding: 8px;
+      background-color: #f2f2f2;
+      color: black;
+      cursor: pointer;
+    }
+  }
+  div.details {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  div.comments {
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      margin-top: 16px;
+
+      input,
+      textarea {
+        padding: 8px;
+        border: none;
+        border-bottom: 2px solid #ccc;
+        font-size: 16px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+      input,
+      textarea:focus {
+        outline: none;
+        resize: none;
+      }
+
+      input[type='email'] {
+      }
+      input[type='submit'] {
+        border: none;
+        align-self: flex-end;
+        cursor: pointer;
+      }
+    }
+    div.commentsContainer {
+      margin-top: 16px;
+
+      div.commentContainer {
+        position: relative;
+
+        span.time {
+          position: absolute;
+          top: 4px;
+          right: 4px;
+          font-size: 12px;
+          opacity: 0.7;
+        }
+      }
+    }
+  }
+}

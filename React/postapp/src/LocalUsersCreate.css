@@ -1,28 +1,20 @@
-form.createPost {
+form.createUser {
   display: flex;
   flex-direction: column;
   gap: 16px;
 
-  select,
-  input,
-  textarea {
+  input {
     padding: 8px;
     border: none;
     border-bottom: 2px solid #ccc;
     font-size: 16px;
   }
-
-  *::placeholder {
+  input::placeholder {
     color: black;
     font-family: inherit;
   }
-  *:focus-visible {
+  input:focus-visible {
     outline: none;
-  }
-
-  textarea {
-    resize: none;
-    font-family: inherit;
   }
 
   div.buttonHolder {
