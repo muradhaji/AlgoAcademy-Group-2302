@@ -6,7 +6,7 @@ function LocalUsers() {
   let [users, setUsers] = useState([]);
 
   useEffect(() => {
-    let localusers = JSON.parse(localStorage.getItem('localusers') || []);
+    let localusers = JSON.parse(localStorage.getItem('localusers') || '[]');
     setUsers(localusers);
   }, []);
 
